@@ -41,6 +41,7 @@ public class UserService {
 		
 		if(!user.isPresent()) {
 			throw new UserNotFoundException("User not found in user repository");
+			
 		}
 		return user;
 	}
